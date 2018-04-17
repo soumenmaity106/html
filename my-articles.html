@@ -1,0 +1,466 @@
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from bs/other-projects/Manuscript/html/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 13:48:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal Section</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" />
+<link href="css/bootstrap-select.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/network.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/coustom-style.css">
+<link href="font/css/font-awesome.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<style>
+        .morris-hover {
+      position:absolute;
+      z-index:1000;
+    }
+    
+    .morris-hover.morris-default-style {     border-radius:10px;
+      padding:6px;
+      color:#666;
+      background:rgba(255, 255, 255, 0.8);
+      border:solid 2px rgba(230, 230, 230, 0.8);
+      font-family:sans-serif;
+      font-size:12px;
+      text-align:center;
+    }
+    
+    .morris-hover.morris-default-style .morris-hover-row-label {
+      font-weight:bold;
+      margin:0.25em 0;
+    }
+    
+    .morris-hover.morris-default-style .morris-hover-point {
+      white-space:nowrap;
+      margin:0.1em 0;
+    }
+    
+    svg { width: 100%; }
+    </style>
+</head>
+
+<body>    
+        <header>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed col-xs-none" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                  <a class="navbar-brand logo-wth" href="#"><img src="images/manuscript-logo1.png"></a>
+                </div>
+                <div class="collapse navbar-collapse " id="defaultNavbar1">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="active"><a href="index.html"><i class="menu-icon"></i><span>My Journal</span></a></li>
+                        <li><a href="mu-manuscript.html"><i class="menu-icon"></i><span>My Manuscript</span></a></li>
+                        <li><a href="my-articles.html"><i class="menu-icon"></i><span>My articles</span></a></li>
+                        <li><a href="services.html"><i class="menu-icon"></i><span>Services</span></a></li>
+                        <li><a href="#"><i class="menu-icon"></i><span>writer</span></a></li>
+                        <li><a href="network.html"><i class="menu-icon"></i><span>Network</span></a></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav profile pull-right fa-wth">
+                    <li><img src="images/wellet1-icon.png"></li>
+                    <li><img src="images/belll.png"></li>
+                    <li><img src="images/ol.png"></li>
+                    <li>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="images/profile-icon.png">
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu options">
+                              <li><a href="profile.html">Profile</a></li>
+                              <li><a href="#">Log out</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="background-dark">
+            </div>
+        </header>
+        <div class="wrapper">
+                <!-- Sidebar Holder -->
+                <nav id="sidebar">
+                    
+                    <ul class="list-unstyled components sidebar-list">
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Profile
+                            </a>
+                            <div class="panel-body">
+                                    <div class="feature-box progress-div no-margin-top" id="progressBar">
+                                        <span class="sidebar-header-title">Complete your Profile</span>
+                                       <h3 class="pull-left complete-profile siderbar-profile-title">Complete<br>your<br>Profile</h3>
+                                       <div class="pr-gress pull-right">
+                                          <div class="progress" data-percentage="80">
+                                             <span class="progress-left">
+                                             <span class="progress-bar"></span>
+                                             </span>
+                                             <span class="progress-right">
+                                             <span class="progress-bar"></span>
+                                             </span>
+                                             <div class="progress-value">
+                                                <div class="progress-color-velu">
+                                                   80%<br>
+                                                   <span>completed</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <p class="width-80-sm sidebar-singel-content" >Lorem Ipsum is simply<br> dummy text of the printing and <br> typesetting industry. Lorem Ipsum</p>
+                                       <a href="#" class="btn btn-defaults width-100" style="text-align: center">Add aducation and exerience details</a>
+                                    </div>
+                                 </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-signal"></i>
+                                Connections
+                            </a>
+                            <div class="panel panel-default " id="veowallprofile">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                       <h4 class="panel-title">
+                                          <a style="color:#000;">
+                                          View all 178 Connections
+                                          </a>
+                                       </h4>
+                                    </div>
+                                    <div>
+                                       <div class="panel-body">
+                                          <div class="feature-box view-all-div no-margin-top">
+                                             <ul>
+                                                <li><a href="#"><img src="images/profile-icon.png"></a></li>
+                                                <li><a href="#"><img src="images/profile-icon.png"></a></li>
+                                                <li><a href="#"><img src="images/profile-icon.png"></a></li>
+                                                <li><a href="#"><img src="images/profile-icon.png"></a></li>
+                                                <li><a href="#"><img src="images/profile-icon.png"></a></li>
+                                                <li><a href="#"><img src="images/profile-icon.png"></a></li>
+                                                <a class="pull-right view-all-btn" href="#" style="color:rgb(67, 5, 238);">View all 178 Connections</a>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Portfolio
+                            </a>
+                            <div class="panel panel-default" id="panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                       <h4 class="panel-title">
+                                          <a style="color:#000;">
+                                          Profile
+                                          </a>
+                                       </h4>
+                                    </div>
+                                    <div>
+                                       <div class="panel-body">
+                                          <div class="feature-box text-center profile-div no-margin-top">
+                                             <div class="images-div">
+                                                <img src="images/user-profile.png">
+                                                <ul>
+                                                   <li><a href="#"><i>&nbsp;</i></a></li>
+                                                   <li><a href="#"><i>&nbsp;</i></a></li>
+                                                   <li><a href="#"><i>&nbsp;</i></a></li>
+                                                </ul>
+                                             </div>
+                                             <h4>Lorem Ipsum is</h4>
+                                             <p>Lorem Ipsum is usd sdj sdf sdf</p>
+                                             <p class="bold"><span><i class="fa fa-users"></i> 250</span> &nbsp; &nbsp; &nbsp; &nbsp;<span><i class="fa fa-image"></i> 100</span></p>
+                                             <span><a href="#" class="edit"><i class="fa fa-pencil pull-right"></i></a></span>
+                                          </div>
+                                          <div class="email-div">
+                                             <div class=" pull-left">
+                                                <label>Email address</label>
+                                                <p>info@domain.com</p>
+                                             </div>
+                                             <div class="pull-right vote-a-feature last-element-sidebar">
+                                                <a href="#" style="color:#ccc;"><i style="margin: 0px;"></i> <span style="position:relative;left:-18px;color:blue;">Vote for <br> a  feature</span> </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                        </li>
+                       
+                </nav>
+    
+                <!-- Page Content Holder -->
+                <div id="content" >
+                      
+                        <div class="col-md-12">
+                                <div class="mid-bar">
+                                    <div class="feature-box tab-content-div padding-0 my-articles-mid">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading">
+                                                    <span class="my-artical-tab">
+                                                        <!-- Tabs -->
+                                                        <ul class="nav panel-tabs">
+                                                            <li class="active"><a href="#tab1" data-toggle="tab">My Articles</a></li>
+                                                        </ul>
+                                                    </span>
+                                                    <div style="margin-top:40px;">
+                                                            <a id="sidebarCollapse" class="btn btn-info navbar-btn columactive "> <i class="fa fa-bars" aria-hidden="true"></i>
+                                                            </a>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body padding-0 my-articles-panel">
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane active" id="tab1">
+                                                            <div class="feature-box no-margin-top table-feature-box">
+                                                                <table>
+                                                                    <tr>
+                                                                        <th>Title</th>
+                                                                        <th>Type</th>
+                                                                        <th>Possible Citations</th>
+                                                                        <th>Published Year</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                                                        <p>Lorem Ipsum is simply</p></td>
+                                                                        <td>Research</td>
+                                                                        <td>23</td>
+                                                                        <td>2016
+                                                                            <div class="popup">
+                                                                                <div class="dropdown">
+                                                                                    <button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-plus"></i></button>
+                                                                                    <ul class="dropdown-menu options" role="menu" aria-labelledby="menu1">
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#myModal1">Manual Upload</a></li>
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#myModal2">Bulk Upload</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <!-- Modal -->
+                                                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                                <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                     <form action="">
+                                                                         <div class="form-group">
+                                                                             <label for="title">Title</label>
+                                                                             <input type="text" name="" class="form-control" id="title">
+                                                                         </div>
+                                                                         <div class="form-group">
+                                                                             <label for="content">Content</label>
+                                                                            <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                                                                         </div>
+                                                                         <div class="form-group">
+                                                                             <label for="">Type</label>
+                                                                             <select name="" class="form-control" id="">
+                                                                                 <option value="research">research</option>
+                                                                                 <option value="research">research2</option>
+                                                                             </select>
+                                                                         </div>
+                                                                         <div class="form-group">
+                                                                             <label for="">Possible Citation</label>
+                                                                             <input type="number" name="" class="form-control" id="">
+                                                                         </div>
+                                                                         <div class="form-group">
+                                                                             <label for="">Published Year</label>
+                                                                             <select name="" class="form-control" id="">
+                                                                                 <option value="2012">2012</option>
+                                                                                 <option value="2012">2013</option>
+                                                                                 <option value="2012">2014</option>
+                                                                                 <option value="2012">2015</option>
+                                                                                 <option value="2012">2016</option>
+                                                                                 <option value="2012">2017</option>
+                                                                                 <option value="2012">2018</option>
+                                                                             </select>
+                                                                         </div>
+                                                                         <button type="submit" class="btn btn-primary ">Submit</button>
+                                                                     </form>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                    
+                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                                <!-- Modal -->
+                                                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                                <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                     <form action="">
+                                                                            <div class="form-group">
+                                                                                <label for="">Upload</label>
+                                                                                <input type="file" name="" class="form-control" id="">
+                                                                            </div>
+                                                                     
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                   </form>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                                    <tr>
+                                                                        <td><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                                                        <p>Lorem Ipsum is simply</p></td>
+                                                                        <td>Research</td>
+                                                                        <td>23</td>
+                                                                        <td>2016
+                                                                            <div class="popup">
+                                                                                <div class="dropdown">
+                                                                                    <button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-plus"></i></button>
+                                                                                    <ul class="dropdown-menu options" role="menu" aria-labelledby="menu1">
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manual Upload</a></li>
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bulk Upload</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                                                        <p>Lorem Ipsum is simply</p></td>
+                                                                        <td>Research</td>
+                                                                        <td>23</td>
+                                                                        <td>2016
+                                                                            <div class="popup">
+                                                                                <div class="dropdown">
+                                                                                    <button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-plus"></i></button>
+                                                                                    <ul class="dropdown-menu options" role="menu" aria-labelledby="menu1">
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manual Upload</a></li>
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bulk Upload</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                                                        <p>Lorem Ipsum is simply</p></td>
+                                                                        <td>Research</td>
+                                                                        <td>23</td>
+                                                                        <td>2016
+                                                                            <div class="popup">
+                                                                                <div class="dropdown">
+                                                                                    <button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-plus"></i></button>
+                                                                                    <ul class="dropdown-menu options" role="menu" aria-labelledby="menu1">
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manual Upload</a></li>
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bulk Upload</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                                                        <p>Lorem Ipsum is simply</p></td>
+                                                                        <td>Research</td>
+                                                                        <td>23</td>
+                                                                        <td>2016
+                                                                            <div class="popup">
+                                                                                <div class="dropdown">
+                                                                                    <button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-plus"></i></button>
+                                                                                    <ul class="dropdown-menu options" role="menu" aria-labelledby="menu1">
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manual Upload</a></li>
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bulk Upload</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                                                        <p>Lorem Ipsum is simply</p></td>
+                                                                        <td>Research</td>
+                                                                        <td>23</td>
+                                                                        <td>2016 
+                                                                            <<div class="popup">
+                                                                                <div class="dropdown">
+                                                                                    <button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-plus"></i></button>
+                                                                                    <ul class="dropdown-menu options" role="menu" aria-labelledby="menu1">
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manual Upload</a></li>
+                                                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bulk Upload</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>           
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                                <div id="bar-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>                    </div>
+                            </div>
+                </div>
+            </div>
+    
+    <script src="http://beta.submitmanuscript.net/js/app.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/main.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <script>
+            $(document).ready(function() {
+        barChart();
+        
+      
+        $(window).resize(function() {
+          window.barChart.redraw();
+         
+        });
+      });
+      
+      function barChart() {
+        window.barChart = Morris.Bar({
+          element: 'bar-chart',
+          data: [
+            { y: '2006', a: 100, b: 90 },
+            { y: '2007', a: 75,  b: 65 },
+            { y: '2008', a: 50,  b: 40 },
+            { y: '2009', a: 75,  b: 65 },
+            { y: '2010', a: 50,  b: 40 },
+            { y: '2011', a: 75,  b: 65 },
+            { y: '2012', a: 100, b: 90 }
+          ],
+          xkey: 'y',
+          ykeys: ['a', 'b'],
+          labels: ['Series A', 'Series B'],
+          lineColors: ['#1e88e5','#ff3321'],
+          lineWidth: '3px',
+          resize: true,
+          redraw: true
+        });
+      }
+      
+      
+        </script>
+
+</body>
+</html>
